@@ -1,0 +1,146 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the HTML and body elements take up the entire viewport height */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    /* default text color */
+    background-color: #f7f7f7;
+    /* light gray background for easy viewing */
+    overflow-x: hidden;
+    /* in case any inner content overflows horizontally */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* make sure it at least fills the viewport */
+    background-color: #828282;
+    /* white background for the main content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    text-align: justify;
+    margin-top: 5vh;
+    margin-right: 21vw;
+    margin-left: 21vw;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: left;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.navbar1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #181818, #515151);
+    color: #fff;
+    /* white text for contrast */
+}
+
+.heading {
+    font-family: 'Monoton', cursive;
+    font-size: xxx-large;
+}
+
+.canvas {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    border: 8px solid #C6D2D4;
+    transition: opacity 3s ease;
+}
+
+.canvas.fading {
+    opacity: 0;
+}
+
+p {
+    padding: 2vh;
+    font-family: 'Questrial', sans-serif;
+    color: #FFF;
+    font-size: large;
+    margin-bottom: 5vh;
+    border: 3px solid #181818;
+    height: 34vh;
+    overflow-y: auto;
+}
+
+.status {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 3vh;
+}
+
+/* Base button styling */
+.button-toggle {
+    display: inline-block;
+    padding: 1vh 2vw;
+    border: none;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 2vh;
+}
+
+.button-toggle {
+    background-color: #828282;;
+    letter-spacing: .5vw;
+    border: 2px solid #111;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-toggle:hover {
+    border-color: #fff;
+    color: #fff;
+    background-position: 100% 0;
+}
+
+.button-toggle:disabled {
+    border-color: #616161;
+    color: #616161; /* or any other color you want for the disabled state */
+    cursor: not-allowed; 
+    
+}
